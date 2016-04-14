@@ -30,13 +30,13 @@ watch: $(OBJ)
 .c.o:
 	$(CC) $< $(CFLAGS) -c -o $@
 
-install: run
+install: watch
 	cp -f watch $(PREFIX)/bin/watch
 
 uninstall:
 	rm -f $(PREFIX)/bin/watch
 
 clean:
-	rm -f run $(OBJ)
+	rm -f watch $(OBJ)
 
 .PHONY: clean install uninstall
