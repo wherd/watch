@@ -20,8 +20,6 @@
 #include <libgen.h>
 #include <string.h>
 #include <unistd.h>
-#include <signal.h>
-#include <sys/stat.h>
 
 #include <CoreServices/CoreServices.h>
 
